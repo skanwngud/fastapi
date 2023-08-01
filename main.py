@@ -1,5 +1,6 @@
 import uvicorn
 
+from pydantic import BaseModel
 from enum import Enum
 from fastapi import FastAPI
 
@@ -27,6 +28,13 @@ async def model_selection(model_name: ModelName):
         return {"model_name": "dsfd"}
     
     return {"model_name": "scrfd"}
+
+class ModelSelection(BaseModel):
+    model_name: str
+
+@app.post("/model_selection")
+async def model_select(model_name: ModelSelection):
+    return model_name.model_name
 
 if __name__ == "__main__":
     uvicorn.run(app=app, port=8080)
