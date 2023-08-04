@@ -26,7 +26,7 @@ if __name__ == "__main__":
 ```
 - 위 코드 실행 후 [http://127.0.0.1:8000](http://127.0.0.1:8000) 로 접속하면 `{"message": "hello world"}` 라는 메세지를 볼 수 있다.
 
-## API docs wjqthr
+## API docs 정의
 - API docs 란 사용자가 정의한 `api` 를 테스트 할 수 있는 페이지를 의미한다.
 - 해당 페이지에서 `request` 등을 테스트해볼 수 있다.
 - [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
