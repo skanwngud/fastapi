@@ -92,3 +92,7 @@ if __name__ == "__main__":
     uvicorn.run("query_parameter:app", host="127.0.0.1", port=8000, reload=True, reload_dirs="./", reload_excludes="README.md")
 ```
 - 두 개 이상의 `path`, `qeury parameter` 를 사용했으며 각각 사용자 정의 타입과 `Optional` 타입도 지정해줬다.
+
+# Reference
+- [fastapi 공식문서](https://fastapi.tiangolo.com/ko/)
+- [붕어사랑 티스토리](https://lucky516.tistroy.com/category/Fast%20API)

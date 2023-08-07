@@ -92,3 +92,7 @@ if __name__ == "__main__":
 - operation 은 순서의 영향을 받는데, 위로 갈수록 우선순위가 높아진다.
 - 위 코드의 경우 `"models/me"` 로 접속하게 되면 `ModelName` 의 `path` 에 `me` 라는 value 는 존재하지 않는다는 에러가 발생한다.
     - `"models/{path}"` 가 먼저 호출 되면서 `path` 에 `me` 를 추가하고 `ModelName` 에서 `me` 라는 키를 찾기 때문이다.
+
+# Reference
+- [fastapi 공식문서](https://fastapi.tiangolo.com/ko/)
+- [붕어사랑 티스토리](https://lucky516.tistroy.com/category/Fast%20API)
